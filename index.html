@@ -1,7 +1,108 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <!-- Added the css here ,due to security reasons  -->
+    <style>
+    
+body{
+    background: rgba(200, 200, 200);
+    font-size: Helvetica;
+    text-align: center;
+}
+header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    position: fixed;
+    background: rgba(200, 200, 200);
+    width: 100%;
+    top: 0;
+}
+#header-img {
+    display: inline-grid;
+    height: 8vw;
+    width: 8vw;
+}
+#right-div {
+    /* margin-top: 8vw; */
+}
+#nav-bar {
+    display: grid;
+    justify-content: center;
+}
+#nav {
+    margin-left: -3vw;
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+li a{
+    color: black;
+    text-decoration: none;
+}
+#email-section{
+    justify-content: center;
+}
+#email{
+    width: 25vw;
+    height: 3vw;
+}
+input[type="submit"]{
+    max-width: 150px;
+    width: 100%;
+    height: 3vw;
+    margin: 15px 0;
+    border: 0;
+    background-color: #f1c40f;
+}
+#image-container {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-rows: 20vw 20vw;
+    grid-column-gap: 0.5vw;
+    grid-row-gap: 0.5vw;
+    justify-content: center;
+}
+#image {
+    margin: 0.05vw;
+    height: 20vw;
+    width: 20vw;
+}
+@media (min-width: 600px) {
+    #image {
+        flex-direction: row;
+    }
+}
+#features-description{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 20vw 0 20vw;
+}
+#video {
+    border-radius: 5vw;
+}
+#features{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#features ul {
+    text-align: left;
+}
+#pricing {
+    margin: 3vw;
+}
+#prices {
+    color: black;
+
+}</style>
 </head>
 <header id="header">
     <div id="center-div">
